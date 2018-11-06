@@ -1,0 +1,19 @@
+
+<div class="container">
+    <ul class="navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="localhost:3000">
+          <img src="https://www.compsmag.com/wp-content/uploads/2015/02/Contacts.png" width="28" height="28">
+        </a>
+
+      </div>
+      <li>  <%= link_to "Tipos", kinds_path %>  </li>
+      <li> <%= link_to "Contatos", contacts_path %> </li>
+      <li> <%= link_to "Endereço", addresses_path%>  </li>
+      <li> <%= link_to "Telefone", phones_path %>  </li>
+    </ul>
+
+  <p class="is-5"> <strong> <%= t 'hello' %> </strong></p>
+  <p> <%= l Date.today %></p>
+
+</div>

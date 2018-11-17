@@ -1,0 +1,206 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<nav class="nav navbar-light">
+  <div class="nav-logo">
+    <%= image_tag "logo_ribamar1.png", :transformation =>
+        { :dpr => "auto", :responsive => true} %>
+  </div>
+
+  <div class="infopanel">
+    <p> <strong>Projeto: </strong> 	RECADASTRAMENTO SAO JOSÉ DO RIBAMAR</p>
+    <p> <strong>Exercício:</strong> 	2017 </p>
+    <p> <strong>Ponto de Coleta:</strong> 	SECRETARIA DE CULTURA SEDE</p>
+  </div>
+  <div class="loginpanel">
+    login aqui
+  </div>
+
+  <div id="webtechlogo">
+    <%= image_tag "logo_webtech.png", :transformation =>
+        { :dpr => "auto", :responsive => true} %>
+  </div>
+</nav>
+<div class="nav-menu-items navbar-light">
+  <ul class="nav ">
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projetos
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projetos
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projetos
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projetos
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projetos
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projetos
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="login-action">
+    <li class="btn" id="logout">
+      <%= link_to destroy_user_session_path, method: :delete, class: "btn" do %>
+        <i class="fas fa-sign-out-alt"></i> Logout
+      <% end %>
+    </li>
+  </div>
+
+
+</div>
+
+  <main class="body" role="main">
+    <div class="row">
+      <div class="col col-md-1"></div>
+      <div class="col col-md-10">
+        <div class="search-brand">
+          <i class="fas fa-search fa-2x"></i><span class="search-style"><strong>Pesquisar</strong></span>
+        </div>
+        <div class="row">
+          <div class="col col-md2"></div>
+          <div class="col col-md-8" style="text-align: center">
+            <a class="btn btn-outline-primary btn-lg" id="busca-servidor" data-toggle="collapse" aria-expanded="false" data-target="#search-form-serv" role="button" aria-controls="search-form-serv">
+              Servidores
+            </a>
+            <a class="btn btn-outline-primary btn-lg" id="busca-dependente" data-toggle="collapse" aria-expanded="false"  data-target="#search-form-dep" role="button" aria-controls="search-form-dep">
+              Dependentes
+            </a>
+            <a class="btn btn-outline-primary btn-lg" id="cadastrar" href="#">
+              Cadastrar
+            </a>
+          </div>
+
+          <div class="col col-md2"></div>
+          <div class="search-form-style collapse" id="search-form-serv" aria-labelledby="busca-servidor">
+
+            <form class="form-inline my-2 my-lg-0">
+
+              <label for="nome">Nome</label>:
+              <%= text_field_tag 'nome', nil, placeholder: 'Insira o nome aqui', class: "form-control mr-sm-2"  %>
+
+              <label for="nome">Campo2</label>:
+              <%= text_field_tag 'a', nil, placeholder: 'Insira o nome aqui', class: "form-control mr-sm-2"  %>
+
+              <label for="nome">Campo3</label>:
+              <%= text_field_tag 'b', nil, placeholder: 'Insira o nome aqui', class: "form-control mr-sm-2"  %>
+              <button type="button" class="btn btn-secondary" data-toggle="collapse" aria-expanded="true" href="#exibir-pessoas" data-target="" aria-controls="">Buscar servidor</button>
+
+            </form>
+          </div>
+          <div class="search-form-style collapse" id="search-form-dep" aria-labelledby="busca-dependente">
+
+            <form class="form-inline my-2 my-lg-0">
+
+              <label for="nome">Nome</label>:
+              <%= text_field_tag 'nome', nil, placeholder: 'Insira o nome aqui', class: "form-control mr-sm-2"  %>
+
+              <label for="nome">Campo2</label>:
+              <%= text_field_tag 'a', nil, placeholder: 'Insira o nome aqui', class: "form-control mr-sm-2"  %>
+
+              <label for="nome">Campo3</label>:
+              <%= text_field_tag 'b', nil, placeholder: 'Insira o nome aqui', class: "form-control mr-sm-2"  %>
+              <button type="button" class="btn btn-secondary" data-toggle="collapse" aria-expanded="true" href="#exibir-pessoas" data-target="" aria-controls="">Buscar dependente</button>
+
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+        <% names = Array.new(10, "nome") %>
+        <table class="table collapse" id="exibir-pessoas">
+          <thead>
+            <tr>
+              <th>Atributo1</th>
+              <th>Atributo2</th>
+              <th>Atributo3</th>
+              <th>Atributo4</th>
+              <th>Visualizar</th>
+              <th>Recadastrar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%names.each do |x| %>
+              <tr>
+                <td><%= x%></td>
+                <td><%= x%></td>
+                <td><%= x%></td>
+                <td><%= x%></td>
+                <td> <button type="button" class="btn btn-secondary">Visualizar</button></td>
+                <td> <button type="button" class="btn btn-secondary">Recadastrar</button></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      <div class="col col-md-1"></div>
+    </div>
+
+  </main>
+
+

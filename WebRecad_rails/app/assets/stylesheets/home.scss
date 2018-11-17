@@ -1,0 +1,77 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+div>img {
+  width: 50%;
+  height: auto;
+}
+.nav-logo {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+div.infopanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 0.8em;
+  justify-content: center;
+  //color: white;
+}
+
+.loginpanel {
+
+}
+div.nav-logo {
+  display: flex;
+
+  margin-right: -12em
+}
+div#webtechlogo {
+  width: 10%;
+  height: auto;
+  float: right;
+  margin-right: -3rem;
+  justify-content: center;
+}
+.nav-menu-items {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0 0.5rem 0;
+  justify-content: center;
+  //border-top: 0.5rem solid #343a40;
+  //border-bottom: 0.5rem solid #343a40;
+  ul {
+    align-items: center;
+  }
+}
+
+div.login-action {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+div>a {
+  color: black;
+}
+li#logout {
+  padding-right: 2rem;
+}
+li a {
+  color: black;
+}
+.search-brand {
+  text-align: center;
+  padding: 2rem;
+}
+.search-style {
+  font-size: 2.5em;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.search-form-style {
+  padding: 1em;
+  text-align: center;
+}

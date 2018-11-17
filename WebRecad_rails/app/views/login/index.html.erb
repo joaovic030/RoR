@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <nav class="nav" role="navigation" aria-label="main navigation">
+    <div class="nav-style">
+      <%= image_tag "barra_webrecad_login2.png", :transformation =>
+          { :dpr => "auto", :responsive => true, :width => "auto", :crop => "scale", :angle => 20} %>
+    </div>
+  </nav>
+  <div class="content-page">
+    <div class="login-items">
+      <% if user_signed_in? %>
+        <li>
+          <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to('Login', new_user_session_path)  %>
+        </li>
+      <% end %>
+    </div>
+
+    <div>
+      <div class="city-logo">
+        <%= image_tag "LOGO_SJR.png", :transformation =>
+            { :dpr => "auto", :responsive => true} %>
+      </div>
+    </div>
+
+  </div>
+  <%= render partial: "shared/footer" %>
